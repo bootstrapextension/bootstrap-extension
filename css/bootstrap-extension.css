@@ -1,6 +1,6 @@
 /*
- * Bootstrap Extension v5.2.1 (https://bootstrap-extension.com)
- * Copyright 2018-2022 The Bootstrap Extension Author: Peter Joiner
+ * Bootstrap Extension v5.3.0 (https://bootstrapextensions.com)
+ * Copyright 2018-2023 The Bootstrap Extension Author: Peter Joiner
  * Copyright 2018-2023 A.K.K., Inc.
  * Licensed under MIT
  */
