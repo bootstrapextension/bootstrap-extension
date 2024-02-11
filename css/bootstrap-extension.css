@@ -1,7 +1,7 @@
 /*
- * Bootstrap Extension v5.3.0 (https://bootstrapextensions.com)
- * Copyright 2018-2023 The Bootstrap Extension Author: Peter Joiner
- * Copyright 2018-2023 A.K.K., Inc.
+ * Bootstrap Extension v5.3.1 (https://bootstrapextensions.com)
+ * Copyright 2018-2024 The Bootstrap Extension Author: Peter Joiner
+ * Copyright 2018-2024 A.K.K., Inc.
  * Licensed under MIT
  */
 :root {
@@ -81,7 +81,7 @@ img {
     width: 100%;
 }
 
-#alert-cookie {
+.alert-cookie {
     display: none;
     margin-bottom: 0;
     position: fixed;
@@ -93,7 +93,7 @@ img {
     z-index: var(--alert-cookie-zIndex);
 }
 
-#alert-cookie p {
+.alert-cookie p {
     margin: 0 1em 0 0;
 }
 
@@ -123,7 +123,11 @@ img {
     padding-bottom: 50px;
 }
 
-.carousel-indicators-circle li {
+.carousel-indicators-circle {
+    list-style-type: none;
+}
+
+.carousel-indicators-circle [data-bs-target] {
     width: var(--carousel-indicators-circle-Size) !important;
     height: var(--carousel-indicators-circle-Size) !important;
     border-radius: 50%;
@@ -1436,6 +1440,12 @@ input.ph-dark, textarea.ph-dark, select.ph-dark.normalColor {
     background-repeat: no-repeat;
 }
 
+@media (max-width: 575.99px) {
+    .parallax {
+        background-size: 100%;
+    }
+}
+
 .w-5 { width: 5% !important; }
 .w-10 { width: 10% !important; }
 .w-15 { width: 15% !important; }
@@ -2136,8 +2146,8 @@ input.ph-dark, textarea.ph-dark, select.ph-dark.normalColor {
 }
 
 .multi-navbar nav li ul li a {
-    padding-top: 20px !important;
-    padding-bottom: 20px !important;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
     width: auto !important;
 }
 
