@@ -299,7 +299,7 @@ docReady(() => {
                 if (i === 0) {
                     root.style.setProperty('--multi-navbar-nav-ul-Right', -parseInt(getComputedStyle(root).getPropertyValue('--multinavbar-offcanvas-Width')) + 'px');
                 } else
-                if (menuItem.getAttribute('href').indexOf('#') > -1 && menuItem.getAttribute('href').length > 1 && window.location.href.indexOf('index') > -1) {
+                if (menuItem.getAttribute('href') && menuItem.getAttribute('href').indexOf('#') > -1 && menuItem.getAttribute('href').length > 1) {
                     root.style.setProperty('--multi-navbar-nav-ul-Right', -parseInt(getComputedStyle(root).getPropertyValue('--multinavbar-offcanvas-Width')) + 'px');
                     event.preventDefault();
                     if (hp && getComputedStyle(hp).getPropertyValue('display') === 'flex') {
